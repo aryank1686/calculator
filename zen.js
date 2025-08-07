@@ -23,6 +23,10 @@ image.addEventListener("click", () => {
   input.focus();
 });
 
+input.addEventListener("input", (e) => {
+  e.target.value = e.target.value.replace(/[^0-9+\-*/().\s]/g, "");
+});
+
 buttons = document.querySelectorAll(".btn");
 buttons.forEach((button) => {
   button.addEventListener("click", (e) => {
