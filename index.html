@@ -8,34 +8,44 @@
   </head>
   <body>
     <div class="calculator">
-      <div class="text">Calculator</div>
-      <input type="text" class="type" />
-      <div class="opbr btn">(</div>
-      <div class="clbr btn">)</div>
-      <div class="percent btn">&#37;</div>
-      <div class="divide btn">&divide;</div>
-      <br />
-      <div class="one btn">1</div>
-      <div class="two btn">2</div>
-      <div class="three btn">3</div>
-      <div class="multiply btn">&times;</div>
-      <br />
-      <div class="four btn">4</div>
-      <div class="five btn">5</div>
-      <div class="six btn">6</div>
-      <div class="minus btn">&#45;</div>
-      <br />
-      <div class="seven btn">7</div>
-      <div class="eight btn">8</div>
-      <div class="nine btn">9</div>
-      <div class="add btn">&#43;</div>
-      <br />
-      <div class="zero btn">0</div>
-      <div class="dot btn">.</div>
-      <div class="clear btn">C</div>
-      <div class="equals btn">=</div>
+      <div class="header">
+        <p class="text">Calculator</p>
+        <div class="image">
+          <img src="night-mode.png" alt="Toggle theme" />
+        </div>
+      </div>
+      <input type="text" class="type" placeholder="0" autofocus />
+      <div class="row">
+        <button class="opbr btn nonNum">(</button>
+        <button class="clbr btn nonNum">)</button>
+        <button class="clearAll btn nonNum">AC</button>
+        <button class="divide btn nonNum operator">&divide;</button>
+      </div>
+      <div class="row">
+        <button class="one btn num">1</button>
+        <button class="two btn num">2</button>
+        <button class="three btn num">3</button>
+        <button class="multiply btn nonNum operator">&times;</button>
+      </div>
+      <div class="row">
+        <button class="four btn num">4</button>
+        <button class="five btn num">5</button>
+        <button class="six btn num">6</button>
+        <button class="minus btn nonNum operator">&#45;</button>
+      </div>
+      <div class="row">
+        <button class="seven btn num">7</button>
+        <button class="eight btn num">8</button>
+        <button class="nine btn num">9</button>
+        <button class="add btn nonNum operator">&#43;</button>
+      </div>
+      <div class="row">
+        <button class="zero btn num">0</button>
+        <button class="dot btn num">.</button>
+        <button class="clear btn num">&#x232B;</button>
+        <button class="equals btn nonNum operator">=</button>
+      </div>
     </div>
-
     <script src="zen.js"></script>
   </body>
 </html>
