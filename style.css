@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: black;
+  background-color: #000;
 }
 
 .calculator {
@@ -20,7 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: black;
+  background-color: #000;
   border-radius: 16px;
 }
 
@@ -58,18 +58,18 @@ img {
 
 .row {
   width: 240px;
-  outline: 2px solid black;
   display: flex;
 }
 
 .btn {
   width: 70px;
   border: none;
-  outline: 2px solid black;
   color: white;
 }
 
 .type {
+  color: #fff;
+  background-color: #000;
   border: none;
   width: 220px;
   height: 100px;
@@ -78,8 +78,6 @@ img {
   box-sizing: content-box;
   font-size: 40px;
   text-align: right;
-  color: white;
-  background-color: black;
   margin: 10px;
 }
 
@@ -88,7 +86,7 @@ img {
 }
 
 .type::placeholder {
-  color: white;
+  color: black;
 }
 
 .btn {
@@ -107,7 +105,9 @@ img {
   user-select: none;
   transition: background-color 0.1s ease-in-out;
 }
-
+.num {
+  border: 1px solid black;
+}
 .num:active {
   background-color: grey;
 }
@@ -116,6 +116,7 @@ img {
   color: black;
   background-color: #00ffff;
   transition: background-color 0.1s ease-in-out;
+  border: 1px solid black;
 }
 
 .nonNum:active {
